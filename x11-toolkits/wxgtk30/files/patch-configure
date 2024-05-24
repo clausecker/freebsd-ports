@@ -9,7 +9,7 @@
      USE_BSD=1
      USE_FREEBSD=1
      $as_echo "#define __FREEBSD__ 1" >>confdefs.h
-@@ -21657,6 +21657,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
+@@ -21657,6 +21657,7 @@ SEARCH_INCLUDE="\
  
  
  SEARCH_INCLUDE="\
@@ -35,7 +35,7 @@
            *-*-darwin* | *-*-cygwin* )
                                                  THREAD_OPTS=""
                  ;;
-@@ -32764,8 +32763,8 @@ else
+@@ -32764,8 +32763,8 @@ fi
          fi
      fi
  fi
@@ -45,6 +45,50 @@
  if test "x$WXWIN_COMPATIBILITY_2_6" = "xyes"; then
      $as_echo "#define WXWIN_COMPATIBILITY_2_6 1" >>confdefs.h
  
+@@ -36563,12 +36562,12 @@ if test -n "$PKG_CONFIG"; then
+         pkg_cv_WEBKIT_CFLAGS="$WEBKIT_CFLAGS"
+     else
+         if test -n "$PKG_CONFIG" && \
+-    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"webkit2gtk-4.0\""; } >&5
+-  ($PKG_CONFIG --exists --print-errors "webkit2gtk-4.0") 2>&5
++    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"webkit2gtk-4.1\""; } >&5
++  ($PKG_CONFIG --exists --print-errors "webkit2gtk-4.1") 2>&5
+   ac_status=$?
+   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+   test $ac_status = 0; }; then
+-  pkg_cv_WEBKIT_CFLAGS=`$PKG_CONFIG --cflags "webkit2gtk-4.0" 2>/dev/null`
++  pkg_cv_WEBKIT_CFLAGS=`$PKG_CONFIG --cflags "webkit2gtk-4.1" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -36581,12 +36580,12 @@ if test -n "$PKG_CONFIG"; then
+         pkg_cv_WEBKIT_LIBS="$WEBKIT_LIBS"
+     else
+         if test -n "$PKG_CONFIG" && \
+-    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"webkit2gtk-4.0\""; } >&5
+-  ($PKG_CONFIG --exists --print-errors "webkit2gtk-4.0") 2>&5
++    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"webkit2gtk-4.1\""; } >&5
++  ($PKG_CONFIG --exists --print-errors "webkit2gtk-4.1") 2>&5
+   ac_status=$?
+   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+   test $ac_status = 0; }; then
+-  pkg_cv_WEBKIT_LIBS=`$PKG_CONFIG --libs "webkit2gtk-4.0" 2>/dev/null`
++  pkg_cv_WEBKIT_LIBS=`$PKG_CONFIG --libs "webkit2gtk-4.1" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -36605,9 +36604,9 @@ fi
+         _pkg_short_errors_supported=no
+ fi
+         if test $_pkg_short_errors_supported = yes; then
+-	        WEBKIT_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "webkit2gtk-4.0"`
++	        WEBKIT_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "webkit2gtk-4.1"`
+         else
+-	        WEBKIT_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "webkit2gtk-4.0"`
++	        WEBKIT_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "webkit2gtk-4.1"`
+         fi
+ 	# Put the nasty error message in config.log where it belongs
+ 	echo "$WEBKIT_PKG_ERRORS" >&5
 @@ -39001,6 +39000,7 @@ fi
        ;;
  
