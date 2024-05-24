@@ -1,6 +1,6 @@
 PORTNAME=	gthumb
 PORTVERSION=	3.12.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libclutter-1.0.so:graphics/clutter \
 		liblcms2.so:graphics/lcms2 \
 		liboauth.so:net/liboauth \
 		libpng.so:graphics/png \
-		libsoup-2.4.so:devel/libsoup \
+		libsoup-3.0.so:devel/libsoup3 \
 		libtiff.so:graphics/tiff \
 		libcolord.so:graphics/colord
 RUN_DEPENDS=	gsettings-desktop-schemas>0:devel/gsettings-desktop-schemas
@@ -100,7 +100,7 @@ WEBP_MESON_TRUE=	libwebp
 WEBSERVICES_DESC=	Web services
 WEBSERVICES_LIB_DEPENDS=\
 			libjson-glib-1.0.so:devel/json-glib \
-			libwebkit2gtk-4.0.so:www/webkit2-gtk3
+			libwebkit2gtk-4.1.so:www/webkit2-gtk3
 WEBSERVICES_MESON_TRUE=	webservices
 YELP_DESC=		Viewer for built-in help system
 YELP_RUN_DEPENDS=	yelp:x11/yelp
