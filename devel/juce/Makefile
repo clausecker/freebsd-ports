@@ -1,6 +1,6 @@
 PORTNAME=	juce
 DISTVERSION=	7.0.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,9 +19,9 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libcurl.so:ftp/curl \
 		libfreetype.so:print/freetype2 \
 		libharfbuzz.so:print/harfbuzz \
-		libjavascriptcoregtk-4.0.so:www/webkit2-gtk3 \
+		libjavascriptcoregtk-4.1.so:www/webkit2-gtk3 \
 		libpng16.so:graphics/png \
-		libsoup-2.4.so:devel/libsoup \
+		libsoup-3.0.so:devel/libsoup3 \
 		libsysinfo.so:devel/libsysinfo
 
 USES=		cmake compiler:c++11-lang dos2unix gl gnome localbase:ldflags pkgconfig xorg
@@ -55,8 +55,7 @@ DEMOS_CMAKE_BOOL=	JUCE_BUILD_EXAMPLES
 DEMOS_LDFLAGS=		-lexecinfo
 DEMOS_USE=		GNOME=atk,cairo,gdkpixbuf2,gtk30,pango
 DEMOS_LIB_DEPENDS=	libcurl.so:ftp/curl \
-			libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
-			libsoup-2.4.so:devel/libsoup
+			libwebkit2gtk-4.1.so:www/webkit2-gtk3
 DEMO_FILES=	\
 	AnalyticsCollectionDemo AnimationAppDemo AnimationDemo AudioAppDemo AudioLatencyDemo AudioPlaybackDemo AudioPluginDemo AudioRecordingDemo AudioSettingsDemo AudioSynthesiserDemo \
 	BlocksDrawingDemo BlocksMonitorDemo BlocksSynthDemo BouncingBallWavetableDemo Box2DDemo ChildProcessDemo CodeEditorDemo ComponentDemo ComponentTransformsDemo ConvolutionDemo \
