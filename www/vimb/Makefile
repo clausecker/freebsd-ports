@@ -1,6 +1,6 @@
 PORTNAME=	vimb
 DISTVERSION=	3.7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	ports@FreeBSD.org
@@ -10,8 +10,8 @@ WWW=		https://fanglingsu.github.io/vimb/
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+LIB_DEPENDS=	libsoup-3.0.so:devel/libsoup3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 
 USES=		compiler:c11 desktop-file-utils gmake gnome pkgconfig
 USE_GITHUB=	yes
