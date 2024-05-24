@@ -1,6 +1,6 @@
---- meson.build.orig	2022-02-01 18:38:16 UTC
+--- meson.build.orig	2022-11-15 19:10:06 UTC
 +++ meson.build
-@@ -6,7 +6,6 @@ project(
+@@ -6,7 +6,6 @@ add_project_arguments([
  )
  
  add_project_arguments([
@@ -8,3 +8,12 @@
          '-Wno-incompatible-pointer-types',
          '-Wno-unused',
          '-Wl,--enable-new-dtags',
+@@ -68,7 +67,7 @@ sqlite3_dep = dependency('sqlite3', version: '>=3.5.9'
+ libxml_dep = dependency('libxml-2.0', version: '>=2.6.32')
+ rest_dep = dependency('rest-0.7', version: '>=0.7')
+ sqlite3_dep = dependency('sqlite3', version: '>=3.5.9')
+-webkit2gtk_dep = dependency('webkit2gtk-4.0', version: '>=2.0.0')
++webkit2gtk_dep = dependency('webkit2gtk-4.1', version: '>=2.0.0')
+ gstreamer_plugins_base_vapi = meson.get_compiler('vala').find_library('gstreamer-base-1.0')
+ gstreamer_plugins_base_dep = declare_dependency(dependencies: [gstreamer_plugins_base_vapi])
+ lconv_dep = meson.get_compiler('vala').find_library('LConv', dirs: join_paths(meson.current_source_dir(), 'vapi'))
