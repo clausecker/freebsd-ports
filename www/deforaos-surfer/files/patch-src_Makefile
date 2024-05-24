@@ -14,9 +14,9 @@
 +CPPFLAGSF= -D WITH_WEBKIT2
  CPPFLAGS=
 -CFLAGSF	=
-+CFLAGSF	= `pkg-config --cflags libDesktop gtk+-x11-3.0 webkit2gtk-4.0`
++CFLAGSF	= `pkg-config --cflags libDesktop gtk+-x11-3.0 webkit2gtk-4.1`
  CFLAGS	= -W -Wall -g -O2 -fPIE -D_FORTIFY_SOURCE=2 -fstack-protector
-+LDFLAGSF= `pkg-config --libs libDesktop gtk+-x11-3.0 webkit2gtk-4.0` -lintl
++LDFLAGSF= `pkg-config --libs libDesktop gtk+-x11-3.0 webkit2gtk-4.1` -lintl
  LDFLAGS	= -pie -Wl,-z,relro -Wl,-z,now
  EXEEXT	=
  RM	= rm -f

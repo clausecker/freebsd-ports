@@ -1,6 +1,6 @@
 PORTNAME=	surfer
 PORTVERSION=	0.3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	https://ftp.defora.org/pub/DeforaOS/Apps/Desktop/src/Surfer/
 PKGNAMEPREFIX=	deforaos-
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
 		libDesktop.so:x11/deforaos-libdesktop \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3 \
 		libharfbuzz.so:print/harfbuzz \
-		libsoup-2.4.so:devel/libsoup
+		libsoup-3.0.so:devel/libsoup3
 
 USES=		gnome desktop-file-utils pkgconfig gettext
 USE_XORG=	x11
