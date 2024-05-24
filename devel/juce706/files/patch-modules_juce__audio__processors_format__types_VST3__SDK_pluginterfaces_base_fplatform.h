@@ -1,8 +1,8 @@
---- modules/juce_audio_processors/format_types/VST3_SDK/pluginterfaces/base/fplatform.h.orig	2023-01-25 11:45:10 UTC
+--- modules/juce_audio_processors/format_types/VST3_SDK/pluginterfaces/base/fplatform.h.orig	2023-08-03 10:07:31 UTC
 +++ modules/juce_audio_processors/format_types/VST3_SDK/pluginterfaces/base/fplatform.h
-@@ -139,6 +139,43 @@
- 		#define SMTG_HAS_NOEXCEPT 1
- 	#endif
+@@ -188,6 +188,43 @@
+ 		#define SMTG_HAS_CPP14_CONSTEXPR SMTG_CPP14
+ 	#endif // __cplusplus
  //-----------------------------------------------------------------------------
 +// BSD
 +//-----------------------------------------------------------------------------
