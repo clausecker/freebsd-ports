@@ -1,0 +1,11 @@
+--- client/SDL/aad/CMakeLists.txt.orig	2024-05-24 20:33:51 UTC
++++ client/SDL/aad/CMakeLists.txt
+@@ -44,7 +44,7 @@ if (WITH_WEBVIEW)
+       )
+     else()
+       find_package(PkgConfig REQUIRED)
+-      pkg_check_modules(WEBVIEW_GTK webkit2gtk-4.0 REQUIRED)
++      pkg_check_modules(WEBVIEW_GTK webkit2gtk-4.1 REQUIRED)
+       include_directories(${WEBVIEW_GTK_INCLUDE_DIRS})
+       list(APPEND LIBS
+         ${WEBVIEW_GTK_LIBRARIES}

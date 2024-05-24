@@ -1,5 +1,6 @@
 PORTNAME=	freerdp
 DISTVERSION=	3.5.1
+PORTREVISION=	1
 CATEGORIES=	net comms
 MASTER_SITES=	https://pub.freerdp.com/releases/ \
 		https://github.com/FreeRDP/FreeRDP/releases/download/${DISTVERSION}/
@@ -145,9 +146,9 @@ PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 PULSEAUDIO_CMAKE_BOOL=	WITH_PULSE
 
 SDL_LIB_DEPENDS=	libatk-1.0.so:accessibility/at-spi2-core \
-			libsoup-2.4.so:devel/libsoup \
+			libsoup-3.0.so:devel/libsoup3 \
 			libharfbuzz.so:print/harfbuzz \
-			libwebkit2gtk-4.0.so:www/webkit2-gtk3
+			libwebkit2gtk-4.1.so:www/webkit2-gtk3
 SDL_USES=		gettext gnome sdl
 SDL_USE=		gnome=cairo,gdkpixbuf2,glib20,gtk30,pango sdl=sdl2,ttf2,image2
 SDL_CMAKE_BOOL=		WITH_CLIENT_SDL WITH_SDL_IMAGE_DIALOGS
