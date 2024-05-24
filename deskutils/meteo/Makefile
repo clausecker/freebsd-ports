@@ -1,5 +1,6 @@
 PORTNAME=	meteo
 PORTVERSION=	0.9.9.3
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	tagattie@FreeBSD.org
@@ -12,8 +13,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	appstream-util:devel/appstream-glib
 LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libjson-glib-1.0.so:devel/json-glib \
-		libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libsoup-3.0.so:devel/libsoup3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 
 USES=		compiler:c11 gettext gnome meson pkgconfig python:build \
 		shebangfix vala:build

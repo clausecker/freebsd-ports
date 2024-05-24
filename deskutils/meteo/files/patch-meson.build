@@ -1,0 +1,14 @@
+--- meson.build.orig	2024-05-24 20:06:55 UTC
++++ meson.build
+@@ -34,9 +34,9 @@ gtk_dep = dependency('gtk+-3.0')
+ glib_dep = dependency('glib-2.0')
+ gobj_dep = dependency('gobject-2.0')
+ gtk_dep = dependency('gtk+-3.0')
+-soup_dep = dependency('libsoup-2.4')
++soup_dep = dependency('libsoup-3.0')
+ json_dep = dependency('json-glib-1.0')
+-webk_dep = dependency('webkit2gtk-4.0')
++webk_dep = dependency('webkit2gtk-4.1')
+ ind_opt_dep = dependency('ayatana-appindicator3-0.1' , required : false)
+ 
+ if ind_opt_dep.found()
