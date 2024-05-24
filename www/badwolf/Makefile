@@ -1,6 +1,6 @@
 PORTNAME=	badwolf
 DISTVERSION=	1.3.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	https://hacktivis.me/releases/
 
@@ -12,12 +12,12 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS+=	libharfbuzz.so:print/harfbuzz \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 
 USES=		desktop-file-utils gnome ninja pkgconfig
 USE_GNOME=	atk cairo gdkpixbuf2 gtk30 libxml2 pango
 HAS_CONFIGURE=	yes
-CONFIGURE_ENV=	WITH_WEBKITGTK=4.0
+CONFIGURE_ENV=	WITH_WEBKITGTK=4.1
 
 OPTIONS_DEFINE=			GSTREAMER NLS
 OPTIONS_DEFAULT=		GSTREAMER LIBSOUP
@@ -32,8 +32,8 @@ URI_PARSER_DESC=	URI PARSER
 GSTREAMER_USES=		gstreamer
 GSTREAMER_USE=		GSTREAMER=bad,good,libav
 GURI_CONFIGURE_ENV=	WITH_URI_PARSER=guri
-LIBSOUP_LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup
-LIBSOUP_CONFIGURE_ENV=	WITH_URI_PARSER=libsoup2
+LIBSOUP_LIB_DEPENDS=	libsoup-3.0.so:devel/libsoup3
+LIBSOUP_CONFIGURE_ENV=	WITH_URI_PARSER=libsoup3
 
 NLS_USES=		gettext
 NLS_EXTRA_PATCHES_OFF=	${PATCHDIR}/extra-patch-configure
