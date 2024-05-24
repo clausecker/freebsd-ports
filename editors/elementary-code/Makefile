@@ -1,6 +1,6 @@
 PORTNAME=	elementary-code
 DISTVERSION=	7.1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	editors
 
 MAINTAINER=	miguel@gocobachi.dev
@@ -19,8 +19,8 @@ LIB_DEPENDS=	libeditorconfig.so:editors/editorconfig-core-c \
 		libhandy-1.so:x11-toolkits/libhandy \
 		libpeas-1.0.so:devel/libpeas \
 		libpeas-gtk-1.0.so:devel/libpeas \
-		libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libsoup-3.0.so:devel/libsoup3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 RUN_DEPENDS=	droid-fonts-ttf>0:x11-fonts/droid-fonts-ttf \
 		pkcheck:sysutils/polkit
 
