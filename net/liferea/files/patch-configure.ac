@@ -1,0 +1,22 @@
+--- configure.ac.orig	2024-05-24 20:44:31 UTC
++++ configure.ac
+@@ -38,8 +38,8 @@ pkg_modules="	gtk+-3.0 >= 3.22.0
+ 		sqlite3 >= 3.7.0
+ 		gmodule-2.0 >= 2.0.0
+ 		gthread-2.0
+-		libsoup-2.4 >= 2.42
+-		webkit2gtk-4.0
++		libsoup-3.0 >= 2.42
++		webkit2gtk-4.1
+ 		json-glib-1.0
+ 		gobject-introspection-1.0
+ 		gsettings-desktop-schemas
+@@ -59,7 +59,7 @@ PKG_CHECK_MODULES([WEB_EXTENSION], [
+ 
+ 
+ PKG_CHECK_MODULES([WEB_EXTENSION], [
+-                  webkit2gtk-web-extension-4.0
++                  webkit2gtk-web-extension-4.1
+                   ])
+ AC_SUBST([WEB_EXTENSION_CFLAGS])
+ AC_SUBST([WEB_EXTENSION_LIBS])
