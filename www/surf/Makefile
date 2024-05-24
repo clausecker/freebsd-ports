@@ -1,6 +1,6 @@
 PORTNAME=	surf
 DISTVERSION=	2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://dl.suckless.org/${PORTNAME}/
 PKGNAMESUFFIX=	-browser
@@ -12,8 +12,8 @@ WWW=		https://surf.suckless.org
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
-		libsoup-2.4.so:devel/libsoup \
+LIB_DEPENDS=	libwebkit2gtk-4.1.so:www/webkit2-gtk3 \
+		libsoup-3.0.so:devel/libsoup3 \
 		libgcr-base-3.so:security/gcr
 RUN_DEPENDS=	dmenu:x11/dmenu \
 		curl:ftp/curl \
@@ -51,19 +51,6 @@ post-extract:
 .endif
 
 post-patch:
-	@${REINPLACE_CMD} -e \
-		'/^PREFIX/s| =| ?=| ; \
-		/^X11/s|/usr/X11R6/|$${LOCALBASE}/| ; \
-		/^GTKINC/s| =| ?=| ; \
-		/^GTKLIB/s| =| ?=| ; \
-		/^INCS/s|-I/usr/include || ; \
-		/^LIBS/s|-L/usr/lib -lc || ; \
-		/^CPPFLAGS/s| =| +=| ; \
-		/^CFLAGS/s| =| +=| ; \
-		/^CFLAGS/s|-Os || ; \
-		/^LDFLAGS/s| =| +=| ; \
-		/^LDFLAGS/s|-g || ; \
-		/^CC/s| =| ?=|' ${WRKSRC}/config.mk
 	@${REINPLACE_CMD} -e 's|st -e|xterm -e|' ${WRKSRC}/config.def.h
 
 post-install:
