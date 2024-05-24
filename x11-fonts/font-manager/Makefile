@@ -1,6 +1,6 @@
 PORTNAME=	font-manager
 PORTVERSION=	0.8.8
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11-fonts gnome
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
@@ -20,8 +20,8 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libharfbuzz.so:print/harfbuzz \
 		libjson-glib-1.0.so:devel/json-glib \
-		libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libsoup-3.0.so:devel/libsoup3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 
 USES=		compiler:c++11-lang desktop-file-utils gettext-tools gnome \
 		meson pkgconfig python shebangfix sqlite vala:build
@@ -42,7 +42,7 @@ OPTIONS_SUB=	yes
 NLS_USES=	gettext-runtime
 NLS_MESON_TRUE=	enable-nls
 
-post-patch:
+pre-configure:
 	@${REINPLACE_CMD} \
 		-e "s|\(find_installation.*\)python3|\1${PYTHON_CMD}|" \
 		${WRKSRC}/meson.build
