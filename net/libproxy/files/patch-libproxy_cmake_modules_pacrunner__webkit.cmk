@@ -1,0 +1,11 @@
+--- libproxy/cmake/modules/pacrunner_webkit.cmk.orig	2024-05-24 20:11:26 UTC
++++ libproxy/cmake/modules/pacrunner_webkit.cmk
+@@ -13,7 +13,7 @@ else()
+   endif()
+ else()
+   if(WITH_WEBKIT3)
+-    px_check_modules(WEBKIT "javascriptcoregtk-4.0")
++    px_check_modules(WEBKIT "javascriptcoregtk-4.1")
+     if(NOT WEBKIT_LIBRARIES)
+       px_check_modules(WEBKIT "javascriptcoregtk-3.0 >= 1.5.0")
+       if(NOT WEBKIT_LIBRARIES)
