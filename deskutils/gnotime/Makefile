@@ -1,6 +1,6 @@
 PORTNAME=	gnotime
 DISTVERSION=	g20231022
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils gnome
 
 MAINTAINER=	truckman@FreeBSD.org
@@ -16,10 +16,10 @@ LIB_DEPENDS=	libqof.so:databases/qof \
 		libgc-threaded.so:devel/boehm-gc-threaded \
 		libdbus-1.so:devel/dbus \
 		libdbus-glib-1.so:devel/dbus-glib \
-		libsoup-2.4.so:devel/libsoup \
+		libsoup-3.0.so:devel/libsoup3 \
 		libguile-2.2.so:lang/guile2 \
 		libharfbuzz.so:print/harfbuzz \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 
 USES=		autoreconf desktop-file-utils gettext gmake gnome libtool pathfix pkgconfig xorg
 USE_GITHUB=	yes

@@ -1,0 +1,11 @@
+--- configure.ac.orig	2024-05-24 19:50:43 UTC
++++ configure.ac
+@@ -139,7 +139,7 @@ dnl *******************************
+ dnl WebKitGTK
+ dnl *******************************
+ 
+-PKG_CHECK_MODULES(WEBKITGTK, webkit2gtk-4.0 >= $WEBKITGTK_REQUIRED)
++PKG_CHECK_MODULES(WEBKITGTK, webkit2gtk-4.1 >= $WEBKITGTK_REQUIRED)
+ AC_SUBST(WEBKITGTK_CFLAGS)
+ AC_SUBST(WEBKITGTK_LIBS)
+ 
