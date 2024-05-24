@@ -1,6 +1,6 @@
---- meson.build.orig	2019-06-23 03:48:31 UTC
+--- meson.build.orig	2020-04-11 06:07:09 UTC
 +++ meson.build
-@@ -39,7 +39,7 @@ c_args = [
+@@ -40,7 +40,7 @@ cc = meson.get_compiler('c')
  
  # Find libMarkdown
  cc = meson.get_compiler('c')
@@ -9,9 +9,12 @@
  
  # Let's define our executable
  add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')], language: 'vala')
-@@ -78,7 +78,7 @@ executable(
+@@ -76,9 +76,9 @@ executable(
+         dependency('gobject-2.0'),
+         dependency('gtksourceview-3.0'),
          dependency('gtk+-3.0'),
-         dependency('webkit2gtk-4.0'),
+-        dependency('webkit2gtk-4.0'),
++        dependency('webkit2gtk-4.1'),
          dependency('gtkspell3-3.0'),
 -        libmarkdown
 +        #libmarkdown
