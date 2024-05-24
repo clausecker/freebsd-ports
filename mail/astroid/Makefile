@@ -1,7 +1,7 @@
 PORTNAME=	astroid
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.16
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	mail
 
 MAINTAINER=	mylan.connolly@gmail.com
@@ -16,14 +16,14 @@ LICENSE_FILE_LGPL21+ =	${WRKSRC}/COPYING.LGPL-2.1+
 BUILD_DEPENDS=	scdoc:textproc/scdoc \
 		notmuch>0:mail/notmuch
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
-		libjavascriptcoregtk-4.0.so:www/webkit2-gtk3 \
+		libjavascriptcoregtk-4.1.so:www/webkit2-gtk3 \
 		libgmime-3.0.so:mail/gmime30 \
 		libgnutls.so:security/gnutls \
 		libpcre2-8.so:devel/pcre2 \
 		libpeas-1.0.so:devel/libpeas \
 		libprotobuf.so:devel/protobuf \
 		libsass.so:textproc/libsass \
-		libsoup-2.4.so:devel/libsoup
+		libsoup-3.0.so:devel/libsoup3
 RUN_DEPENDS=	notmuch:mail/notmuch
 
 USES=		cmake compiler:c++17-lang desktop-file-utils gettext-runtime gnome \
