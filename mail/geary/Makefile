@@ -1,6 +1,6 @@
 PORTNAME=	geary
 PORTVERSION=	40.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	mail gnome
 MASTER_SITES=	GNOME/sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+)\..*/\1/}
 DIST_SUBDIR=	gnome
@@ -33,10 +33,10 @@ LIB_DEPENDS=	libappstream-glib.so:devel/appstream-glib \
 		libnotify.so:devel/libnotify \
 		libpeas-gtk-1.0.so:devel/libpeas \
 		libsecret-1.so:security/libsecret \
-		libsoup-2.4.so:devel/libsoup \
+		libsoup-3.0.so:devel/libsoup3 \
 		libstemmer.so:textproc/snowballstemmer \
 		libunwind.so:devel/libunwind \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3 \
 		libytnef.so:converters/ytnef
 
 USES=		compiler:c11 cpe desktop-file-utils gettext gnome meson pkgconfig \
