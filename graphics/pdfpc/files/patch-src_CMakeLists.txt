@@ -1,0 +1,32 @@
+--- src/CMakeLists.txt.orig	2024-05-24 19:59:23 UTC
++++ src/CMakeLists.txt
+@@ -30,16 +30,16 @@ if (MDVIEW)
+ endif ()
+ 
+ if (MDVIEW)
+-    pkg_check_modules(WEBKIT REQUIRED webkit2gtk-4.0)
+-    set(MDVIEW_PACKAGES webkit2gtk-4.0)
++    pkg_check_modules(WEBKIT REQUIRED webkit2gtk-4.1)
++    set(MDVIEW_PACKAGES webkit2gtk-4.1)
+     set(EXTRA_VALA_OPTIONS ${EXTRA_VALA_OPTIONS} -D MDVIEW)
+ endif ()
+ 
+ if (REST)
+-    pkg_check_modules(SOUP REQUIRED libsoup-2.4)
++    pkg_check_modules(SOUP REQUIRED libsoup-3.0)
+     pkg_check_modules(QRENCODE REQUIRED libqrencode)
+     set(REST_PACKAGES
+-        libsoup-2.4
++        libsoup-3.0
+     )
+ 
+     if (${CMAKE_HOST_WIN32})
+@@ -136,7 +136,7 @@ PACKAGES
+ vala_precompile(VALA_C
+     ${VALA_SRC}
+ PACKAGES
+-    webkit2gtk-4.0
++    webkit2gtk-4.1
+     json-glib-1.0
+     gio-2.0
+     gee-0.8
