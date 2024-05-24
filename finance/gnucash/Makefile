@@ -1,5 +1,6 @@
 PORTNAME=	gnucash
 PORTVERSION=	5.6
+PORTREVISION=	1
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%29/${PORTVERSION}
 
@@ -16,8 +17,8 @@ LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
 		libharfbuzz.so:print/harfbuzz \
 		libicudata.so:devel/icu \
 		libsecret-1.so:security/libsecret \
-		libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libsoup-3.0.so:devel/libsoup3 \
+		libwebkit2gtk-4.1.so:www/webkit2-gtk3
 RUN_DEPENDS=	p5-Finance-Quote>=0:finance/p5-Finance-Quote \
 		p5-JSON-Parse>=0:devel/p5-JSON-Parse \
 		p5-libwww>=0:www/p5-libwww \
