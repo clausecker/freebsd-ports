@@ -1,6 +1,6 @@
 PORTNAME=	ufs
 DISTVERSION=	0.4.3
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems sysutils
 PKGNAMEPREFIX=	fusefs-
 
 MAINTAINER=	fuz@FreeBSD.org
