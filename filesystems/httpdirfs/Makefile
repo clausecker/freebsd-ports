@@ -1,6 +1,6 @@
 PORTNAME=	httpdirfs
 DISTVERSION=	1.2.6
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems
 PKGNAMEPREFIX=	fusefs-
 
 PATCH_SITES=	https://github.com/fangfufu/httpdirfs/commit/
