@@ -2,7 +2,7 @@ PORTNAME=	fusefs-ext2
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.0.11
 PORTREVISION=	2
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	FUSE module to mount ext2, ext3 and ext4 with read write support
