@@ -801,7 +801,6 @@
     SUBDIR += msktutil
     SUBDIR += mstflint
     SUBDIR += mtm
-    SUBDIR += mtpfs
     SUBDIR += mtxorbd
     SUBDIR += multitail
     SUBDIR += munin-common
