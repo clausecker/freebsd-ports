@@ -5145,7 +5145,6 @@
     SUBDIR += py-libusb1
     SUBDIR += py-libversion
     SUBDIR += py-libvirt
-    SUBDIR += py-libzfs
     SUBDIR += py-lief
     SUBDIR += py-line-profiler
     SUBDIR += py-linear-tsv
