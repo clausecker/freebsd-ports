@@ -6561,7 +6561,6 @@
     SUBDIR += rubygem-aws-sdk-ecr
     SUBDIR += rubygem-aws-sdk-ecrpublic
     SUBDIR += rubygem-aws-sdk-ecs
-    SUBDIR += rubygem-aws-sdk-efs
     SUBDIR += rubygem-aws-sdk-eks
     SUBDIR += rubygem-aws-sdk-eksauth
     SUBDIR += rubygem-aws-sdk-elasticache
