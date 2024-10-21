@@ -1666,7 +1666,6 @@
     SUBDIR += xfce4-systemload-plugin
     SUBDIR += xfce4-wavelan-plugin
     SUBDIR += xfsm
-    SUBDIR += xfsprogs
     SUBDIR += xin
     SUBDIR += xjobs
     SUBDIR += xmbmon
