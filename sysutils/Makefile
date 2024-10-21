@@ -1175,7 +1175,6 @@
     SUBDIR += py-upt-rubygems
     SUBDIR += py-uptime
     SUBDIR += py-zdaemon
-    SUBDIR += py-zfs-autobackup
     SUBDIR += qchroot
     SUBDIR += qdirstat
     SUBDIR += qflipper
