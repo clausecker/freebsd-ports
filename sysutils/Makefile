@@ -1700,7 +1700,6 @@
     SUBDIR += zfsnap2
     SUBDIR += zfstools
     SUBDIR += zidrav
-    SUBDIR += zisofs-tools
     SUBDIR += znapzend
     SUBDIR += zogftw
     SUBDIR += zoxide
