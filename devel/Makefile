@@ -5154,7 +5154,6 @@
     SUBDIR += py-littleutils
     SUBDIR += py-livemark
     SUBDIR += py-lizard
-    SUBDIR += py-llfuse
     SUBDIR += py-llvmcpy
     SUBDIR += py-llvmlite
     SUBDIR += py-lml
