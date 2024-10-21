@@ -784,7 +784,6 @@
     SUBDIR += moosefs2-metalogger
     SUBDIR += moosefs2-netdump
     SUBDIR += moosefs3-cgi
-    SUBDIR += moosefs3-cgiserv
     SUBDIR += moreutils
     SUBDIR += most
     SUBDIR += mountsmb2
