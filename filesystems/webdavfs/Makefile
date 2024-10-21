@@ -1,7 +1,7 @@
 PORTNAME=	fusefs-webdavfs
 DISTVERSION=	g20200520
 PORTREVISION=	23
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems
 
 MAINTAINER=	eugen@FreeBSD.org
 COMMENT=	FUSE filesystem for WEBDAV shares
