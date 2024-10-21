@@ -1691,7 +1691,6 @@
     SUBDIR += zetaback-devel
     SUBDIR += zfs-periodic
     SUBDIR += zfs-replicate
-    SUBDIR += zfs-snap-diff
     SUBDIR += zidrav
     SUBDIR += znapzend
     SUBDIR += zogftw
