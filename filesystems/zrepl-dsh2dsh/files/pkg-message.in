@@ -1,7 +1,7 @@
 [
 { type: install
   message: <<EOM
-Messages from sysutils/zrepl:
+Messages from filesystems/zrepl-dsh2dsh:
 
 SETUP BEFORE FIRST USE:
 - Create the log file /var/log/zrepl.log:
