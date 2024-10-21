@@ -16,7 +16,7 @@ EXPIRATION_DATE=2024-12-31
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atomiclong>=0.1.1:devel/py-atomiclong@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cffi>=1.12.3:devel/py-cffi@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}fusepy>=3.0.1:devel/py-fusepy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}fusepy>=3.0.1:filesystems/py-fusepy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycparser>=2.19:devel/py-pycparser@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pygit2>=0.28.2:devel/py-pygit2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}raven>=6.10.0:devel/py-raven@${PY_FLAVOR} \
