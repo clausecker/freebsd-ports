@@ -3580,3 +3580,4 @@ ports-mgmt/freebsd-bugzilla-cli||2024-11-02|Has expired: Broken. Upstream unavai
 sysutils/zap|filesystems/zap|2024-10-21|Moved to new category filesystems
 sysutils/fusefs-mergerfs|filesystems/mergerfs|2024-10-21|Moved to new category filesystems
 sysutils/squashfs-tools-ng|filesystems/squashfs-tools-ng|2024-10-21|Moved to new category filesystems
+sysutils/squashfs-tools|filesystems/squashfs-tools|2024-10-21|Moved to new category filesystems
