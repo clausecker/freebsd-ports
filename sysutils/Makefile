@@ -1692,7 +1692,6 @@
     SUBDIR += zfs-periodic
     SUBDIR += zfs-replicate
     SUBDIR += zfs-snap-diff
-    SUBDIR += zfs-snapshot-clean
     SUBDIR += zidrav
     SUBDIR += znapzend
     SUBDIR += zogftw
