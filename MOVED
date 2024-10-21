@@ -3578,3 +3578,4 @@ textproc/ssddiff||2024-10-31|Has expired: Abandonware, unfetchable and upstream 
 sysutils/pydf||2024-11-02|Has expired: Inactive upstream. Does not properly work on FreeBSD
 ports-mgmt/freebsd-bugzilla-cli||2024-11-02|Has expired: Broken. Upstream unavailable
 sysutils/zap|filesystems/zap|2024-10-21|Moved to new category filesystems
+sysutils/fusefs-mergerfs|filesystems/mergerfs|2024-10-21|Moved to new category filesystems
