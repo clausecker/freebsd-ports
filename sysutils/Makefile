@@ -1696,7 +1696,6 @@
     SUBDIR += zfs-snapshot-mgmt
     SUBDIR += zfs-stats
     SUBDIR += zfs-stats-lite
-    SUBDIR += zfsnap
     SUBDIR += zidrav
     SUBDIR += znapzend
     SUBDIR += zogftw
