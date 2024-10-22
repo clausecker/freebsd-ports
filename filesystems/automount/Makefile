@@ -1,6 +1,6 @@
 PORTNAME=	automount
 DISTVERSION=	1.7.9
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems sysutils
 MASTER_SITES=	https://raw.github.com/vermaden/automount/master/
 
 MAINTAINER=	vermaden@interia.pl

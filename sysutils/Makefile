@@ -72,7 +72,6 @@
     SUBDIR += atop
     SUBDIR += auto-admin
     SUBDIR += autojump
-    SUBDIR += automount
     SUBDIR += automounter
     SUBDIR += autorestic
     SUBDIR += azure-agent

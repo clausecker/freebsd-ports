@@ -3,6 +3,7 @@
     SUBDIR += acfgfs
     SUBDIR += afuse
     SUBDIR += archivemount
+    SUBDIR += automount
     SUBDIR += avfs
     SUBDIR += bindfs
     SUBDIR += cfs
