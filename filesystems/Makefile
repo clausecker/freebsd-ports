@@ -13,6 +13,7 @@
     SUBDIR += cryptofs
     SUBDIR += curlftpfs
     SUBDIR += darling-dmg
+    SUBDIR += dsbmd
     SUBDIR += e2fsprogs
     SUBDIR += e2fsprogs-core
     SUBDIR += e2tools

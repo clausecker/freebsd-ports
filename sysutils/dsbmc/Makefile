@@ -10,7 +10,7 @@ WWW=		https://github.com/mrclksr/DSBMC
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	dsbmd>=0.3:sysutils/dsbmd
+RUN_DEPENDS=	dsbmd>=0.3:filesystems/dsbmd
 
 USES=		compiler:c++11-lang desktop-file-utils gl qmake qt:5 tar:tgz
 

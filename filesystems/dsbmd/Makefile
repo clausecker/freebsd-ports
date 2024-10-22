@@ -1,6 +1,6 @@
 PORTNAME=	dsbmd
 PORTVERSION=	1.11.4
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems sysutils
 
 MAINTAINER=	mk@nic-nac-project.org
 COMMENT=	Media mounting daemon
