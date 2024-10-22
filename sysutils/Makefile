@@ -310,7 +310,6 @@
     SUBDIR += dsbbatmon
     SUBDIR += dsbdriverd
     SUBDIR += dsblogoutmgr
-    SUBDIR += dsbmc
     SUBDIR += dsbsu
     SUBDIR += dsbwrtsysctl
     SUBDIR += dtc

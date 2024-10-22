@@ -1,7 +1,7 @@
 PORTNAME=	dsbmc
 DISTVERSION=	1.2
 PORTREVISION=	1
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems sysutils
 
 MAINTAINER=	mk@nic-nac-project.org
 COMMENT=	Qt client for DSBMD that lets you mount media, and more
