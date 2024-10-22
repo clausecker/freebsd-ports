@@ -3678,3 +3678,4 @@ graphics/fusefs-gphotofs|filesystems/gphotofs|2024-10-21|Moved to new category f
 sysutils/automount|filesystems/automount|2024-10-22|Moved to new category filesystems
 sysutils/dsbmd|filesystems/dsbmd|2024-10-22|Moved to new category filesystems
 sysutils/dsbmc-cli|filesystems/dsbmc-cli|2024-10-22|Moved to new category filesystems
+sysutils/dsbmc|filesystems/dsbmc|2024-10-22|Moved to new category filesystems
