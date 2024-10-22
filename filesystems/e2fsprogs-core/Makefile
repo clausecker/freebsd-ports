@@ -79,7 +79,7 @@ NLS_USES=		gettext iconv:build
 BASHTESTS_BUILD_DEPENDS=	${BASH_CMD}:shells/bash
 BASH_CMD=	${LOCALBASE}/bin/bash
 
-LIB_DEPENDS+=	libblkid.so:misc/e2fsprogs-libblkid
+LIB_DEPENDS+=	libblkid.so:filesystems/e2fsprogs-libblkid
 LIB_DEPENDS+=	libuuid.so:misc/e2fsprogs-libuuid
 
 LIBUNWIND_LIB_DEPENDS=	libunwind.so:devel/libunwind

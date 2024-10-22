@@ -1,5 +1,5 @@
 PORTREVISION=	0
-CATEGORIES=	misc devel
+CATEGORIES=	filesystems misc devel
 PKGNAMESUFFIX=	-libblkid
 
 COMMENT=	Blkid library from e2fsprogs package
