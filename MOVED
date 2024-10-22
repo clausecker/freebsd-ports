@@ -3676,3 +3676,4 @@ sysutils/fusefs-bindfs|filesystems/bindfs|2024-10-21|Moved to new category files
 sysutils/fusefs-afuse|filesystems/afuse|2024-10-21|Moved to new category filesystems
 graphics/fusefs-gphotofs|filesystems/gphotofs|2024-10-21|Moved to new category filesystems
 sysutils/automount|filesystems/automount|2024-10-22|Moved to new category filesystems
+sysutils/dsbmd|filesystems/dsbmd|2024-10-22|Moved to new category filesystems
