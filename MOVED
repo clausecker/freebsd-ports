@@ -3679,3 +3679,4 @@ sysutils/automount|filesystems/automount|2024-10-22|Moved to new category filesy
 sysutils/dsbmd|filesystems/dsbmd|2024-10-22|Moved to new category filesystems
 sysutils/dsbmc-cli|filesystems/dsbmc-cli|2024-10-22|Moved to new category filesystems
 sysutils/dsbmc|filesystems/dsbmc|2024-10-22|Moved to new category filesystems
+misc/e2fsprogs-libblkid|filesystems/e2fsprogs-libblkid|2024-10-22|Moved to new category filesystems

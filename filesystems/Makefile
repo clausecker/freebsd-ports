@@ -18,6 +18,7 @@
     SUBDIR += dsbmd
     SUBDIR += e2fsprogs
     SUBDIR += e2fsprogs-core
+    SUBDIR += e2fsprogs-libblkid
     SUBDIR += e2tools
     SUBDIR += encfs
     SUBDIR += exfat
