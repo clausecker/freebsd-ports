@@ -311,7 +311,6 @@
     SUBDIR += dsbdriverd
     SUBDIR += dsblogoutmgr
     SUBDIR += dsbmc
-    SUBDIR += dsbmc-cli
     SUBDIR += dsbsu
     SUBDIR += dsbwrtsysctl
     SUBDIR += dtc

@@ -1,7 +1,7 @@
 PORTNAME=	dsbmc-cli
 PORTVERSION=	0.4
 PORTREVISION=	1
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 
 MAINTAINER=	mk@nic-nac-project.org
