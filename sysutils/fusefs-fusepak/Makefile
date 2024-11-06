@@ -1,7 +1,7 @@
 PORTNAME=	fusepak
 PORTVERSION=	0.5
 PORTREVISION=	1
-CATEGORIES=	filesystems games
+CATEGORIES=	sysutils games
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	fusefs-
 

@@ -28,7 +28,6 @@
     SUBDIR += fswatch-mon
     SUBDIR += fusefs-libs
     SUBDIR += fusefs-libs3
-    SUBDIR += fusepak
     SUBDIR += genromfs
     SUBDIR += gitfs
     SUBDIR += gphotofs

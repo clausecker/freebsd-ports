@@ -423,6 +423,7 @@
     SUBDIR += fselect
     SUBDIR += ftwin
     SUBDIR += fusefs-funionfs
+    SUBDIR += fusefs-fusepak
     SUBDIR += fvcool
     SUBDIR += fwup
     SUBDIR += fx
