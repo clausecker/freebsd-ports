@@ -86,7 +86,7 @@ MAKE_ENV+=	KITTY_NO_LTO=1
 .endif
 
 .if ${ARCH} == "i386" || ${ARCH} == "powerpc" || ${ARCH:Marmv?}
-EXTRA_PATCHES+=	extra-patch-vendor_github.com_sgtdi_fswatcher_watcher__kqueue.go
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-vendor_github.com_sgtdi_fswatcher_watcher__kqueue.go
 .endif
 
 post-patch:
