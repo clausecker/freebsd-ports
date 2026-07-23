@@ -8601,6 +8601,7 @@
     SUBDIR += sentry-cli
     SUBDIR += serd
     SUBDIR += serdisplib
+    SUBDIR += sfl-library
     SUBDIR += sfml
     SUBDIR += sfsexp
     SUBDIR += sgb
