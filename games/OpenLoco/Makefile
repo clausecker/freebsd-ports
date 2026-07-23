@@ -18,7 +18,7 @@ LIB_DEPENDS=	libfmt.so:devel/libfmt \
 		libtbb.so:devel/onetbb \
 		libyaml-cpp.so:devel/yaml-cpp
 
-USES=		cmake localbase:ldflags openal
+USES=		cmake localbase:ldflags openal pkgconfig
 USE_GITHUB=	yes
 GH_TUPLE=	OpenLoco:OpenGraphics:v0.1.8:graphics
 
