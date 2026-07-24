@@ -31,6 +31,7 @@ CXXFLAGS+=	-fexperimental-library
 # ld: error: cannot preempt symbol: alcCreateContext
 # See also https://github.com/johalun/lwjgl3-port/issues/7
 LLD_UNSAFE=	yes
+CMAKE_OFF=	CMAKE_INTERPROCEDURAL_OPTIMIZATION
 .endif
 
 post-extract:
