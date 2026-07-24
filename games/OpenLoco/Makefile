@@ -25,13 +25,17 @@ GH_TUPLE=	OpenLoco:OpenGraphics:v0.1.8:graphics
 # for std::execution::par
 CXXFLAGS+=	-fexperimental-library
 
+CMAKE_ARGS+=	-DPROJECT_VERSION=${DISTVERSIONFULL}
+
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "i386"
 # ld: error: cannot preempt symbol: alcCreateContext
 # See also https://github.com/johalun/lwjgl3-port/issues/7
 LLD_UNSAFE=	yes
-CMAKE_OFF=	CMAKE_INTERPROCEDURAL_OPTIMIZATION
+CMAKE_ARGS+=	-DENABLE_IPO=NO
+.else
+CMAKE_ARGS+=	-DENABLE_IPO=YES
 .endif
 
 post-extract:
