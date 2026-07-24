@@ -25,10 +25,18 @@ GH_TUPLE=	OpenLoco:OpenGraphics:v0.1.8:graphics
 # for std::execution::par
 CXXFLAGS+=	-fexperimental-library
 
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == "i386"
+# ld: error: cannot preempt symbol: alcCreateContext
+# See also https://github.com/johalun/lwjgl3-port/issues/7
+LLD_UNSAFE=	yes
+.endif
+
 post-extract:
 	${MKDIR} ${CONFIGURE_WRKSRC}/_deps
 	(cd ${WRKSRC_graphics} && ${RM} -r .github .gitignore LICENSE README.md)
 	${FIND} ${WRKSRC_graphics} -name .gitkeep -delete
 	${MV} ${WRKSRC_graphics} ${CONFIGURE_WRKSRC}/_deps/openloco_objects-src
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
